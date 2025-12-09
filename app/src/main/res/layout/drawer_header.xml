@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#1A1A2E">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/profile"
+        android:background="@drawable/circle_bg"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        android:clipToOutline="true" />
+
+
+    <TextView
+        android:id="@+id/headerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hadia"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/headerEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="student@example.com"
+        android:textColor="#B8C1EC"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>
