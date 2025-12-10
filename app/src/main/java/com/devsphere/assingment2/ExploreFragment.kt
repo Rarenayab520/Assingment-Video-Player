@@ -48,6 +48,18 @@ class ExploreFragment : Fragment() {
             showMsg("Opening Songs Playlist...")
             openVideo("https://youtube.com/playlist?list=PLO7-VO1D0_6M1xUjj8HxTxskouWx48SNw&si=IMUE3gan0oiXRItA")
         }
+        // Trending → Viral best videos
+        binding.cardTrending.setOnClickListener {
+            showMsg("Opening Trending Video...")
+            openVideo("https://youtu.be/j18MRhEfmPk?si=nEHTJB0ADlkEmZcs")
+        }
+
+// Recommended → Motivation + Learning Mix
+        binding.cardRecommended.setOnClickListener {
+            showMsg("Opening Recommended Playlist...")
+            openVideo("https://youtube.com/playlist?list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0&si=FGhx74buRu0fqPBr")
+        }
+
     }
 
     // -----------------------------

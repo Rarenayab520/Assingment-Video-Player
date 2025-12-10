@@ -1,119 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_gradient"
     android:padding="16dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <!-- Title -->
+    <TextView
+        android:id="@+id/homeTitle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:text="Welcome, Hadia 👋"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
 
-        <!-- Title -->
-        <TextView
-            android:id="@+id/homeTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Welcome, Hadia 👋"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"
-            android:paddingTop="12dp" />
+    <TextView
+        android:id="@+id/homeSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Watch entertainment, learn and enjoy"
+        android:textColor="#DDFFFFFF"
+        android:textSize="14sp"
+        android:paddingBottom="16dp" />
 
-        <TextView
-            android:id="@+id/homeSubTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Choose a category to explore"
-            android:textSize="16sp"
-            android:textColor="#E5FFFFFF"
-            android:paddingTop="4dp"
-            android:paddingBottom="20dp"/>
+    <!-- 🔥 VIDEO LIST -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/homeVideoRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="8dp" />
 
-        <!-- 🔥 Entertainment Card -->
-        <LinearLayout
-            android:id="@+id/cardEntertainment"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:orientation="vertical"
-            android:background="@drawable/card_bg"
-            android:padding="18dp"
-            android:gravity="center_vertical"
-            android:layout_marginBottom="16dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Entertainment"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
-                android:textSize="18sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Funny videos • Clips • TikTok"
-                android:textColor="#DDFFFFFF"
-                android:textSize="14sp"
-                android:paddingTop="4dp"/>
-        </LinearLayout>
-
-        <!-- 📚 Education Card -->
-        <LinearLayout
-            android:id="@+id/cardEducation"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:orientation="vertical"
-            android:background="@drawable/card_bg"
-            android:padding="18dp"
-            android:gravity="center_vertical"
-            android:layout_marginBottom="16dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Education"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
-                android:textSize="18sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Coding • Learning • Tutorials"
-                android:textColor="#DDFFFFFF"
-                android:textSize="14sp"
-                android:paddingTop="4dp"/>
-        </LinearLayout>
-
-        <!-- 🎵 Songs Card -->
-        <LinearLayout
-            android:id="@+id/cardSongs"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:orientation="vertical"
-            android:background="@drawable/card_bg"
-            android:padding="18dp"
-            android:gravity="center_vertical"
-            android:layout_marginBottom="16dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Songs"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
-                android:textSize="18sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Latest tracks • Punjabi • Chill"
-                android:textColor="#DDFFFFFF"
-                android:textSize="14sp"
-                android:paddingTop="4dp"/>
-        </LinearLayout>
-
-    </LinearLayout>
-</ScrollView>
+</LinearLayout>

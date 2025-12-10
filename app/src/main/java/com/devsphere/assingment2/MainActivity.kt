@@ -48,8 +48,7 @@ class MainActivity : AppCompatActivity() {
             tab.text = when (position) {
                 0 -> "Home"
                 1 -> "Explore"
-                2 -> "Categories"
-                3 -> "Profile"
+                2 -> "Profile"
                 else -> "Tab"
             }
         }.attach()
@@ -60,8 +59,7 @@ class MainActivity : AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.nav_home -> goToTab(0)
                 R.id.nav_explore -> goToTab(1)
-                R.id.nav_videos -> goToTab(2)
-                R.id.nav_profile -> goToTab(3)
+                R.id.nav_profile -> goToTab(2)
                 R.id.nav_logout -> finish()
             }
 

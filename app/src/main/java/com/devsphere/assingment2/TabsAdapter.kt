@@ -6,7 +6,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 
 class TabsAdapter(activity: FragmentActivity) : FragmentStateAdapter(activity) {
 
-    override fun getItemCount(): Int = 4  // Four tabs
+    override fun getItemCount(): Int = 3 // Four tabs
 
     override fun createFragment(position: Int): Fragment {
         return when (position) {
@@ -15,9 +15,7 @@ class TabsAdapter(activity: FragmentActivity) : FragmentStateAdapter(activity) {
 
             1 -> ExploreFragment()
 
-            2 -> VideosFragment()
-
-            3 -> ProfileFragment()
+            2 -> ProfileFragment()
 
             else -> HomeFragment()
         }
