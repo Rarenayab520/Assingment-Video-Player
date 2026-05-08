@@ -97,3 +97,4 @@ _Project developed for Hadia as part of an academic Android assignment_
 
 <!-- gitpulse:contribution index="1" timestamp="2026-05-08" -->
 <!-- gitpulse:contribution index="2" timestamp="2026-05-08" -->
+<!-- gitpulse:contribution index="3" timestamp="2026-05-08" -->
