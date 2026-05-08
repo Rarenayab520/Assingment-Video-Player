@@ -94,3 +94,5 @@ Everything is designed to be clear, organized, and ready for academic submission
 **Nayab**  
 Android Developer  
 _Project developed for Hadia as part of an academic Android assignment_
+
+<!-- gitpulse:contribution index="1" timestamp="2026-05-08" -->
